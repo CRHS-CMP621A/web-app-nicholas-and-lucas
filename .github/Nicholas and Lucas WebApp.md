@@ -42,17 +42,33 @@ Fourth click:
 Fifth click:
 -Show filled out character with the data compiled with slots to change certain information (alignment, backstory, inventory, etc.)
 
-
+First click:
+-Male
+-Female
+-Nonbinary
+-Not specified
 
 Second click/ Race page:
 [1] available races:
-
+-dwarf
+-elf 
+-half-orc
+-halfling
 [2] available races:
-
+-coming soon
 [3] available races:
-
+-coming soon
 [4] available races:
-
+-coming soon
 [5] available races:
+-coming soon
+
+Third click/Classes: (Get images)
+[1] available classes
+-Cleric
+-Fighting man (+subclass: Paladin)
+-Magic-User
+-Paladin
+
 
  -->
