@@ -47,3 +47,30 @@ h1 {
     font-size: larger;
     color: beige;
 }
+.dwarf {
+    height: 300px;
+}
+.dwarfImg{
+    height: 260px;
+}
+ 
+.elf {
+    height: 300px;
+}
+.elfImg{
+    height: 260px;
+}
+
+.half-orc{
+    height: 300px;
+}
+.halfImg{
+    height: 260px;
+}
+ 
+.halfling{
+    height: 300px;
+}
+.halflingImg{
+    height: 260px;
+}

@@ -1,14 +1,25 @@
+
+
+//initial data and page visibility setups
 let data = []
 document.getElementById('gender').style.display = "none"
+document.getElementById('race').style.display = "none"
+document.getElementById('class').style.display = 'none'
+document.getElementById('character').style.display = 'none'
 
-
-
-
-// Page 1/pop-up 1 code
+// function to test data (for our uses only)
+function dataTest() {
+    alert(data)
+}
+// Page 1 - edition selection
 function displayDescription1e(description){
     document.querySelector('.description').textContent = ' The original 1st edition of D&D was published as a box set in 1974 and features only a handful of the elements for which the game is known today: just three character classes (fighting-man, magic-user, and cleric); four races (human, dwarf, elf, and hobbit); only a few monsters; only three alignments (lawful, neutral, and chaotic).'
 }
-   
+
+function comingSoon() {
+    alert("Coming soon!")
+}
+
 function terminate(description){
     document.querySelector('.description').textContent = '...'
 }
@@ -75,7 +86,7 @@ function genderAppear1e(){
     document.getElementById('gender').style.display = 'block'
 }
 
-//page 2
+//page 2 - gender selection
 
 function maleDesc() {
     document.querySelector('.genderDesc').textContent = 'Male'
@@ -94,8 +105,116 @@ function binaryDesc() {
 }
 
 function nonDesc() {
-document.querySelector('.genderDesc').textContent = 'Non-Specified'
+    document.querySelector('.genderDesc').textContent = 'Non-Specified'
 }
+
+function raceAppear1e() {
+    document.getElementById('gender').style.display = "none"
+    document.getElementById('race').style.display = "block"
+}
+
+function storeMale(){
+    data.push('Male')
+}
+
+function storeFemale(){
+    data.push('Female')
+}
+
+function storeBinary() {
+    data.push('Non-Binary')
+}
+
+function storeNon() {
+    data.push('Non-Specified')
+}
+
+//page 3 - race selection
+
+function dwarfDesc() {
+    Document.querySelector('.raceDesc').textContent = 'Dwarf'
+}
+
+function terminateRace() {
+    document.querySelector('.raceDesc').textContent = '...'
+}
+
+function elfDesc() {
+    document.querySelector('.raceDesc').textContent = 'Elf'
+}
+
+function orcDesc() {
+    document.querySelector('.raceDesc').textContent = 'Half-Orc'
+}
+
+function halflingDesc() {
+    document.querySelector('.raceDesc').textContent = 'Halfling'
+}
+
+function classAppear1e() {
+    document.getElementById('race').style.display = 'none'
+    document.getElementById('class').style.display = 'block'
+}
+
+function storeDwarf() {
+    data.push("Dwarf")
+}
+
+function storeElf() {
+    data.push('Elf')
+}
+
+function storeOrc() {
+    data.push("Half-Orc")
+}
+
+function storeHalfling() {
+    data.push('Halfling')
+}
+
+//page 4 - class selection  
+
+function clericDesc() {
+    document.querySelector('.classDesc').textContent = 'Cleric'
+}
+
+function terminateClass() {
+    document.querySelector('.classDesc').textContent = '...'
+}
+
+function fightingDesc() {
+    document.querySelector('.classDesc').textContent = 'Fighting Man'
+}
+
+function magicDesc() {
+    document.querySelector('.classDesc').textContent = 'Magic User'
+}
+
+function paladinDesc() {
+    document.querySelector('.classDesc').textContent = 'Paladin'
+}
+
+function characterAppear() {
+    document.getElementById('class').style.display = 'none'
+    document.getElementById('character').style.display = 'block'
+}
+
+function storeCleric() {
+    data.push("Cleric")
+}
+
+function storeFighting() {
+    data.push("Fighting Man")
+}
+
+function storeMagic() {
+    data.push("Magic User")
+}
+
+function storePaladin() {
+    data.push("Paladin")
+}
+
 //document.getElementById('editionsPage').style.display = 'none'
 // event listeners 
 //document.querySelector(".e1").addEventListener("click", alert('hi'))

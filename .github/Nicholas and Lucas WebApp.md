@@ -70,5 +70,20 @@ Third click/Classes: (Get images)
 -Magic-User
 -Paladin
 
+Put class names here:
+ dwarf
+ dwarfImg
+
+ elf
+ elfImg
+
+ half-orc
+ halfImg
+ 
+ halfling
+ halflingImg
+
+
+
 
  -->
