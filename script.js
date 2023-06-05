@@ -1,3 +1,9 @@
+let data = []
+document.getElementById('gender').style.display = "none"
+
+
+
+
 // Page 1/pop-up 1 code
 function displayDescription1e(description){
     document.querySelector('.description').textContent = ' The original 1st edition of D&D was published as a box set in 1974 and features only a handful of the elements for which the game is known today: just three character classes (fighting-man, magic-user, and cleric); four races (human, dwarf, elf, and hobbit); only a few monsters; only three alignments (lawful, neutral, and chaotic).'
@@ -63,6 +69,34 @@ function returnImg5e(){
     document.querySelector('.img5').src = "image.png/inkeddoors-closed-5.jpg"
 }
 
+function genderAppear1e(){
+    data.push('1e')
+    document.getElementById('editionsPage').style.display = 'none'
+    document.getElementById('gender').style.display = 'block'
+}
+
+//page 2
+
+function maleDesc() {
+    document.querySelector('.genderDesc').textContent = 'Male'
+}
+
+function terminateGender(){
+    document.querySelector('.genderDesc').textContent = '...'
+}
+
+function femaleDesc(){
+    document.querySelector('.genderDesc').textContent = 'Female'
+}
+
+function binaryDesc() {
+    document.querySelector('.genderDesc').textContent = 'Non-Binary'
+}
+
+function nonDesc() {
+document.querySelector('.genderDesc').textContent = 'Non-Specified'
+}
+//document.getElementById('editionsPage').style.display = 'none'
 // event listeners 
 //document.querySelector(".e1").addEventListener("click", alert('hi'))
 //document.querySelector(".e2").addEventListener("click", )

@@ -9,20 +9,36 @@
 </head>
 
 <body>
-<h1>Welcome to Dungeons and Dragons<br>
-    Character Organizer<h1>
+    <div id = 'editionsPage'>
+        <h1>Welcome to Dungeons and Dragons<br>
+        Character Organizer<h1>
         <hr>
-    <p>Choose Your Edition!<p>
+        <p>Choose Your Edition!<p>
         <br>
-    <p class = 'editions'></p>
-        <button type = "button" class = "e1" onmouseover= displayDescription1e() onmouseout = terminate()><img class = 'img1' src = 'image.png/Inkeddoors-closed-1.jpg' onmouseover = changeImg1e() onmouseout = returnImg1e()></img></button>
-        <button type = "button" class = "e2" onmouseover= displayDescription2e() onmouseout = terminate()><img class = 'img2' src = "image.png/Inkeddoors-closed-2.jpg" onmouseover= changeimg2e() onmouseout = returnimg2e()></img></button>
-        <button type = "button" class = "e3" onmouseover= displayDescription3e() onmouseout = terminate()><img class = 'img3' src = 'image.png/Inkeddoors-closed-3.jpg' onmouseover= changeimg3e() onmouseout= returnimg3e()></button>
-        <br>
-        <button type = "button" class = "e4" onmouseover= displayDescription4e() onmouseout = terminate()><img class = 'img4' src="image.png/Inkeddoors-closed-4.jpg" onmouseover= changeimg4e() onmouseout= returnimg4e()></img></button>
-        <button type = "button" class = "e5" onmouseover= displayDescription5e() onmouseout = terminate()><img class = 'img5' src="image.png/Inkeddoors-closed-5.jpg" onmouseover= changeimg5e() onmoustout = returnImg5e()></button>
-        <br>
-    <p class = "description">...</p>
+        <p class = 'editions'>
+            <button type = "button" class = "e1" onclick = genderAppear1e() onmouseover= displayDescription1e() onmouseout = terminate()><img class = 'img1' src = 'image.png/Inkeddoors-closed-1.jpg' onmouseover = changeImg1e() onmouseout = returnImg1e()></img></button>
+            <button type = "button" class = "e2" onmouseover= displayDescription2e() onmouseout = terminate()><img class = 'img2' src = "image.png/Inkeddoors-closed-2.jpg" onmouseover= changeimg2e() onmouseout = returnimg2e()></img></button>
+            <button type = "button" class = "e3" onmouseover= displayDescription3e() onmouseout = terminate()><img class = 'img3' src = 'image.png/Inkeddoors-closed-3.jpg' onmouseover= changeimg3e() onmouseout= returnimg3e()></button>
+            <br>
+            <button type = "button" class = "e4" onmouseover= displayDescription4e() onmouseout = terminate()><img class = 'img4' src="image.png/Inkeddoors-closed-4.jpg" onmouseover= changeimg4e() onmouseout= returnimg4e()></img></button>
+            <button type = "button" class = "e5" onmouseover= displayDescription5e() onmouseout = terminate()><img class = 'img5' src="image.png/Inkeddoors-closed-5.jpg" onmouseover= changeimg5e() onmoustout = returnImg5e()></button>
+            </p>
+        <p class = "description">...</p>
+    </div>
+<br> <br> <br> <br> <br> <br> <br> 
+    <div id = "gender">
+        <h1> Choose Your Gender</h1>
+        <hr> <br> <br>
+        <p class = "genderSelection">
+            <button type = 'button' class = 'male' height = 100px onmouseover= maleDesc() onmouseout = terminateGender()><img class= "maleImg" src="image.png/male-symbol.png"></img></button>
+            <button type = 'button' class = 'female' height = 100px onmouseover = femaleDesc() onmouseout = terminateGender()><img class = 'femaleImg' src="image.png/female-symbol.png"></img></button>
+            <button type = 'button' class = 'nonBinary' height = 100px onmouseover = binaryDesc() onmouseout = terminateGender()><img class = 'binaryImg' src="image.png/nonbinary-symbol.jpg"></img></button>
+            <button type = 'button' class = 'non' height = 100px onmouseover = nonDesc() onmouseout = terminateGender()><img class = 'nonImg' src="image.png/no-gender-symbole.png"></img></button>
+            </p>
+            <p class = "genderDesc">...</p>
+        </div>
     <script src = "script.js"></script>
+    
+
 </body>
 </html>
