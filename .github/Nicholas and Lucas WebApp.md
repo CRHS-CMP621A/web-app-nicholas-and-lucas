@@ -83,7 +83,16 @@ Put class names here:
  halfling
  halflingImg
 
+    cleric 
+    clericImg
 
+    fightingMan
+    fightingImg
+    
+    magicUser
+    magicImg
 
+    paladin
+    paladinImg
 
  -->

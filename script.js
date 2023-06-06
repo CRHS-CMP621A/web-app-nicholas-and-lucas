@@ -7,9 +7,13 @@ document.getElementById('race').style.display = "none"
 document.getElementById('class').style.display = 'none'
 document.getElementById('character').style.display = 'none'
 
+
+
 // function to test data (for our uses only)
 function dataTest() {
     alert(data)
+    
+    
 }
 // Page 1 - edition selection
 function displayDescription1e(description){
@@ -24,11 +28,11 @@ function terminate(description){
     document.querySelector('.description').textContent = '...'
 }
 function displayDescription2e(description){
-    document.querySelector('.description').textContent = 'AD&D had expanded to several rulebooks, including three collections of monsters (Monster Manual, Monster Manual II, Fiend Folio), and two books governing character skills in wilderness and underground settings. Gygax had already planned a second edition for the game, which would also have been an update of the rules, incorporating the material from Unearthed Arcana, Oriental Adventures, and numerous new innovations from Dragon magazine in the Players Handbook and Dungeon Masters Guide and would have consolidated the Monster Manual, Monster Manual II and Fiend Folio into one volume.[13] Initially, the 2nd edition was planned to consolidate the game, but more changes were made during development, while still aiming at backwards compatibility with 1st edition.'
+    document.querySelector('.description').textContent = 'AD&D had expanded to several rulebooks, including three collections of monsters (Monster Manual, Monster Manual II, Fiend Folio), and two books governing character skills in wilderness and underground settings. Gygax had already planned a second edition for the game, which would also have been an update of the rules, incorporating the material from Unearthed Arcana, Oriental Adventures, and numerous new innovations from Dragon magazine in the Players Handbook and Dungeon Masters Guide and would have consolidated the Monster Manual, Monster Manual II and Fiend Folio into one volume. Initially, the 2nd edition was planned to consolidate the game, but more changes were made during development, while still aiming at backwards compatibility with 1st edition.'
 }
 
 function displayDescription3e(description){
-    document.querySelector('.description').textContent = ' A major revision of the AD&D rules was released in 2000, the first edition published by Wizards of the Coast, which had acquired TSR in 1997.[18] As the Basic game had been discontinued some years earlier, and the more straightforward title was more marketable, the word "advanced" was dropped and the new edition was named just Dungeons & Dragons, but still officially referred to as 3rd edition (or 3E for short). It also served as the basis of a broader role-playing system designed around 20-sided dice, called the d20 System.'
+    document.querySelector('.description').textContent = ' A major revision of the AD&D rules was released in 2000, the first edition published by Wizards of the Coast, which had acquired TSR in 1997. As the Basic game had been discontinued some years earlier, and the more straightforward title was more marketable, the word "advanced" was dropped and the new edition was named just Dungeons & Dragons, but still officially referred to as 3rd edition (or 3E for short). It also served as the basis of a broader role-playing system designed around 20-sided dice, called the d20 System.'
 }
 
 function displayDescription4e(description){
@@ -36,7 +40,7 @@ function displayDescription4e(description){
 }
 
 function displayDescription5e(description){
-    document.querySelector('.description').textContent = 'The 5th editions Basic Rules, a free PDF containing complete rules for play and a subset of the player and DM content from the core rulebooks, was released on July 3, 2014.[38] The Starter Set was released on July 15, featuring a set of pre-generated characters, a set of instructions for basic play, and the adventure module Lost Mine of Phandelver.[39] The Players Handbook was released on August 19, 2014.[40] The fifth edition Monster Manual was released on September 30, 2014.[41] The Dungeon Masters Guide was released on December 9, 2014.[42] The edition returns to having only three core rule books, with the Players Handbook containing most major races and classes. Since 2014, there have been over twenty 5th edition Dungeon & Dragons books published including new rulebooks, campaign guides and adventure modules.[43][44] In January 2022, the Expansion Gift Set was released which includes reissued versions of Xanathars Guide to Everything (2017) and Tashas Cauldron of Everything (2020),[45] "the two most significant expansions for Dungeons & Dragons Fifth Edition" along with a new sourcebook, Mordenkainen Presents: Monsters of the Multiverse (2022).[46] This sourcebook updates[47][48] "over 250 monster stat blocks alongside 30 playable races pulled from a variety of sources" such as Volos Guide to Monsters (2016) and Mordenkainens Tome of Foes (2018).[46]'
+    document.querySelector('.description').textContent = 'The 5th editions Basic Rules, a free PDF containing complete rules for play and a subset of the player and DM content from the core rulebooks, was released on July 3, 2014. The Players Handbook was released on August 19, 2014. The edition returns to having only three core rule books, with the Players Handbook containing most major races and classes. Since 2014, there have been over twenty 5th edition Dungeon & Dragons books published including new rulebooks, campaign guides and adventure modules. In January 2022, the Expansion Gift Set was released which includes reissued versions of Xanathars Guide to Everything (2017) and Tashas Cauldron of Everything (2020), "the two most significant expansions for Dungeons & Dragons Fifth Edition" along with a new sourcebook, Mordenkainen Presents: Monsters of the Multiverse (2022). This sourcebook updates "over 250 monster stat blocks alongside 30 playable races pulled from a variety of sources" such as Volos Guide to Monsters (2016) and Mordenkainens Tome of Foes (2018).'
     
 }
 
@@ -81,7 +85,7 @@ function returnImg5e(){
 }
 
 function genderAppear1e(){
-    data.push('1e')
+    data.push('Edition: 1e ')
     document.getElementById('editionsPage').style.display = 'none'
     document.getElementById('gender').style.display = 'block'
 }
@@ -114,25 +118,25 @@ function raceAppear1e() {
 }
 
 function storeMale(){
-    data.push('Male')
+    data.push(' Gender: Male')
 }
 
 function storeFemale(){
-    data.push('Female')
+    data.push(' Gender: Female')
 }
 
 function storeBinary() {
-    data.push('Non-Binary')
+    data.push(' Gender: Non-Binary')
 }
 
 function storeNon() {
-    data.push('Non-Specified')
+    data.push(' Gender: Non-Specified')
 }
 
 //page 3 - race selection
 
 function dwarfDesc() {
-    Document.querySelector('.raceDesc').textContent = 'Dwarf'
+    document.querySelector('.raceDesc').textContent = 'Dwarf'
 }
 
 function terminateRace() {
@@ -157,25 +161,25 @@ function classAppear1e() {
 }
 
 function storeDwarf() {
-    data.push("Dwarf")
+    data.push(" Race: Dwarf")
 }
 
 function storeElf() {
-    data.push('Elf')
+    data.push(' Race: Elf')
 }
 
 function storeOrc() {
-    data.push("Half-Orc")
+    data.push(" Race: Half-Orc")
 }
 
 function storeHalfling() {
-    data.push('Halfling')
+    data.push(' Race: Halfling')
 }
 
 //page 4 - class selection  
 
 function clericDesc() {
-    document.querySelector('.classDesc').textContent = 'Cleric'
+    document.querySelector('.classDesc').textContent = 'Cleric '
 }
 
 function terminateClass() {
@@ -183,15 +187,15 @@ function terminateClass() {
 }
 
 function fightingDesc() {
-    document.querySelector('.classDesc').textContent = 'Fighting Man'
+    document.querySelector('.classDesc').textContent = 'Fighting Man '
 }
 
 function magicDesc() {
-    document.querySelector('.classDesc').textContent = 'Magic User'
+    document.querySelector('.classDesc').textContent = 'Magic User '
 }
 
 function paladinDesc() {
-    document.querySelector('.classDesc').textContent = 'Paladin'
+    document.querySelector('.classDesc').textContent = 'Paladin '
 }
 
 function characterAppear() {
@@ -200,21 +204,50 @@ function characterAppear() {
 }
 
 function storeCleric() {
-    data.push("Cleric")
+    data.push(" Class: Cleric")
+    localStorage.setItem("data", JSON.stringify(data)) 
 }
 
 function storeFighting() {
-    data.push("Fighting Man")
+    data.push(" Class: Fighting Man")
+    localStorage.setItem("data", JSON.stringify(data)) 
 }
 
 function storeMagic() {
-    data.push("Magic User")
+    data.push(" Class: Magic User")
+    localStorage.setItem("data", JSON.stringify(data)) 
 }
 
 function storePaladin() {
-    data.push("Paladin")
+    data.push(" Class: Paladin")
+    localStorage.setItem("data", JSON.stringify(data)) 
 }
 
+//local storage
+
+const itemSet = (localStorage.getItem('data') !== null);
+
+const dataLoad = JSON.parse(localStorage.getItem('data'))
+
+
+
+if (itemSet) {
+    if (dataLoad){
+        data = dataLoad
+        localStorage.clear()
+    }
+    let text = confirm("Do you want to load data?")
+    if (text){
+        alert(dataLoad)
+        localStorage.clear()
+    } else {
+        alert("Understood")
+        localStorage.clear()
+    }
+
+}
+
+//testing event listeners (not relevant)
 //document.getElementById('editionsPage').style.display = 'none'
 // event listeners 
 //document.querySelector(".e1").addEventListener("click", alert('hi'))

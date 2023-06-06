@@ -2,9 +2,26 @@ body {
     text-align: center;
     background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpahiroarts.artstation.com%2Fprojects%2Fn3n5o&psig=AOvVaw0i-ewOiJiQwL3L4AqCkxPQ&ust=1686065944036000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCOCYp6e7rP8CFQAAAAAdAAAAABAD") ; 
     background-color: darkslategrey;
+    overflow: hidden; 
 }
 .description {
     font-size: medium;
+    background-color:rgb(102, 79, 62)
+}
+.genderDesc{
+    font-size: large;
+    color: beige;
+    background-color:rgb(102, 79, 62)
+}
+.raceDesc {
+    font-size: large;
+    color: beige;
+    background-color:rgb(102, 79, 62)
+}
+.classDesc{
+    font-size: large;
+    color: beige;
+    background-color:rgb(102, 79, 62)
 }
 
 h1 {
@@ -72,5 +89,32 @@ h1 {
     height: 300px;
 }
 .halflingImg{
+    height: 260px;
+}
+.cleric {
+    height: 300px;
+}
+.clericImg{
+    height: 260px;
+}
+
+.fightingMan{
+    height: 300px;
+}
+.fightingImg{
+    height: 260px;
+}
+    
+.magicUser{
+    height: 300px;
+}
+.magicImg{
+    height: 260px;
+}
+
+.paladin{
+    height: 300px;
+}
+.paladinImg{
     height: 260px;
 }
