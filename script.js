@@ -172,22 +172,22 @@ function characterAppear() {
 }
 
 function storeCleric() {
-    data.push(" Class: Cleric")
+    data.push(" Class: Cleric ")
     localStorage.setItem("data", JSON.stringify(data)) 
 }
 
 function storeFighting() {
-    data.push(" Class: Fighting Man")
+    data.push(" Class: Fighting Man ")
     localStorage.setItem("data", JSON.stringify(data)) 
 }
 
 function storeMagic() {
-    data.push(" Class: Magic User")
+    data.push(" Class: Magic User ")
     localStorage.setItem("data", JSON.stringify(data)) 
 }
 
 function storePaladin() {
-    data.push(" Class: Paladin")
+    data.push(" Class: Paladin ")
     localStorage.setItem("data", JSON.stringify(data)) 
 }
 
