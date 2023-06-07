@@ -53,7 +53,7 @@ function displayDescription5e(description){
 //}
 
 function genderAppear1e(){
-    data.push('Edition: 1e ')
+    data.push('Edition: 1e')
     document.getElementById('editionsPage').style.display = 'none'
     document.getElementById('gender').style.display = 'block'
 }
