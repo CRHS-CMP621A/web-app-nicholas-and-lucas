@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<link rel = "stylesheet" href = "style.css"></script>
+
+<title>Dungeons & Dragons Character Organizer</title>
+</head>
+
+<body>
+    <div id = 'editionsPage'>
+        <h1>Welcome to Dungeons and Dragons<br>
+        Character Organizer<h1>
+        <hr>
+        <p>Choose Your Edition!<p>
+        <br>
+        <p class = 'editions'>
+            <button type = "button" class = "e1" onclick = genderAppear1e() onmouseover= displayDescription1e() onmouseout = terminate()><img class = 'img1' src = 'image.png/Inkeddoors-closed-1.jpg'></img></button>
+            <button type = "button" class = "e2" onmouseover= displayDescription2e() onmouseout = terminate() onclick = comingSoon()><img class = 'img2' src = "image.png/Inkeddoors-closed-2.jpg"></img></button>
+            <button type = "button" class = "e3" onmouseover= displayDescription3e() onmouseout = terminate() onclick = comingSoon()><img class = 'img3' src = 'image.png/Inkeddoors-closed-3.jpg'></button>
+            <br>
+            <button type = "button" class = "e4" onmouseover= displayDescription4e() onmouseout = terminate() onclick = comingSoon()><img class = 'img4' src="image.png/Inkeddoors-closed-4.jpg"></img></button>
+            <button type = "button" class = "e5" onmouseover= displayDescription5e() onmouseout = terminate() onclick = comingSoon()><img class = 'img5' src="image.png/Inkeddoors-closed-5.jpg"></button>
+            </p>
+        <p class = "description">...</p>
+    </div>
+<br> <br> <br> <br> <br> <br> <br> 
+    <div id = "gender">
+        <h1> Choose Your Gender</h1>
+        <hr> <br> <br>
+        <p class = "genderSelection">
+            <button type = 'button' class = 'male' height = 100px onmouseover= maleDesc() onmouseout = terminateGender() onclick= raceAppear1e();storeMale()><img class= "maleImg" src="image.png/male-symbol.png"></img></button>
+            <button type = 'button' class = 'female' height = 100px onmouseover = femaleDesc() onmouseout = terminateGender() onclick= raceAppear1e();storeFemale()><img class = 'femaleImg' src="image.png/female-symbol.png"></img></button>
+            <button type = 'button' class = 'nonBinary' height = 100px onmouseover = binaryDesc() onmouseout = terminateGender() onclick= raceAppear1e();storeBinary()><img class = 'binaryImg' src="image.png/nonbinary-symbol.jpg"></img></button>
+            <button type = 'button' class = 'non' height = 100px onmouseover = nonDesc() onmouseout = terminateGender() onclick = raceAppear1e();storeNon()><img class = 'nonImg' src="image.png/no-gender-symbole.png"></img></button>
+            </p>
+            <p class = "genderDesc">...</p>
+        </div>
+
+        <div id = 'race'>
+            <h1>Choose Your Race</h1>
+            <hr> <br> 
+            <p class = 'raceSelection'>
+                <button type = 'button' class = 'dwarf' height = 100px onmouseover = dwarfDesc() onmouseout = terminateRace() onclick = classAppear1e();storeDwarf()><img class = 'dwarfImg' src='image.png/dwarf-image.png'></button>
+                <button type = 'button' class = 'elf' height = 100px onmouseover = elfDesc() onmouseout = terminateRace() onclick = classAppear1e();storeElf()><img class = 'elfImg' src="image.png/elf-image.png"></img></button>
+                <button type = 'button' class = 'half-orc' height = 100px onmouseover = orcDesc() onmouseout = terminateRace() onclick = classAppear1e();storeOrc()><img class = 'halfImg' src="image.png/half-orc-image.jpg"></button>
+                <button type = 'button' class = 'halfling' height = 100px onmouseover = halflingDesc() onmouseout = terminateRace() onclick = classAppear1e();storeHalfling()><img class = 'halflingImg' src = 'image.png/halfling-image.png'></button>
+            </p>
+            <p class = 'raceDesc'>...</p>
+        </div>
+
+        <div id = 'class'>
+            <h1>Choose Your Class</h1>
+            <hr> <br>
+            <p class = 'classSelection'>
+                <button type = 'button' class = 'cleric' height = 100px onmouseover = clericDesc() onmouseout = terminateClass() onclick = characterAppear();storeCleric()><img class = 'clericImg' src="image.png/cleric.png"></button>
+                <button type = 'button' class = 'fightingMan' height = 100px onmouseover = fightingDesc() onmouseout = terminateClass() onclick = characterAppear();storeFighting()><img class = 'fightingImg' src="image.png/fightingman.webp"></button>
+                <button type = 'button' class = 'magicUser' height = 100px onmouseover = magicDesc() onmouseout = terminateClass() onclick = characterAppear();storeMagic()><img class = 'magicImg' src="image.png/magic-user.webp"></button>   
+                <button type = 'button' class = 'paladin' height = 100px onmouseover = paladinDesc() onmouseout = terminateClass() onclick = characterAppear();storePaladin()><img class =  'paladinImg' src="image.png/paladin.webp"></button> 
+            </p>
+            <p class = classDesc>...</p>
+        </div>
+
+        <div id = 'character'>
+            <h1>testing phase<h1>
+                <button type = 'button' onclick=dataTest()>test</button>
+
+    <script src = "script.js"></script>
+    
+
+</body>
+</html>
