@@ -44,13 +44,13 @@ function displayDescription5e(description){
     
 }
 
-function changeImg1e(){
-    document.querySelector('.img1').src = "image.png/doors-open-1.png"
-}
+//function changeImg1e(){
+ //   document.querySelector('.img1').src = "image.png/doors-open-1.png"
+//}
 
-function returnImg1e(){
-    document.querySelector('.img1').src = "image.png/inkeddoors-closed-1.jpg"
-}
+//function returnImg1e(){
+    //document.querySelector('.img1').src = "image.png/inkeddoors-closed-1.jpg"
+//}
 
 function genderAppear1e(){
     data.push('Edition: 1e ')
@@ -147,7 +147,7 @@ function storeHalfling() {
 //page 4 - class selection  
 
 function clericDesc() {
-    document.querySelector('.classDesc').textContent = 'Cleric '
+    document.querySelector('.classDesc').textContent = 'Cleric'
 }
 
 function terminateClass() {
@@ -155,15 +155,15 @@ function terminateClass() {
 }
 
 function fightingDesc() {
-    document.querySelector('.classDesc').textContent = 'Fighting Man '
+    document.querySelector('.classDesc').textContent = 'Fighting Man'
 }
 
 function magicDesc() {
-    document.querySelector('.classDesc').textContent = 'Magic User '
+    document.querySelector('.classDesc').textContent = 'Magic User'
 }
 
 function paladinDesc() {
-    document.querySelector('.classDesc').textContent = 'Paladin '
+    document.querySelector('.classDesc').textContent = 'Paladin'
 }
 
 function characterAppear() {
