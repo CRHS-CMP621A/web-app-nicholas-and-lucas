@@ -52,38 +52,6 @@ function returnImg1e(){
     document.querySelector('.img1').src = "image.png/inkeddoors-closed-1.jpg"
 }
 
-function changeImg2e(){
-    document.querySelector('.img2').src = "image.png/doors-open-1.png"
-}
-
-function returnImg2e(){
-    document.querySelector('.img2').src = "image.png/inkeddoors-closed-2.jpg"
-}
-
-function changeImg3e(){
-    document.querySelector('.img3').src = "image.png/doors-open-1.png"
-}
-
-function returnImg3e(){
-    document.querySelector('.img3').src = "image.png/inkeddoors-closed-3.jpg"
-}
-
-function changeImg4e(){
-    document.querySelector('.img4').src = "image.png/doors-open-1.png"
-}
-
-function returnImg4e(){
-    document.querySelector('.img4').src = "image.png/inkeddoors-closed-4.jpg"
-}
-
-function changeImg5e(){
-    document.querySelector('.img5').src = "image.png/doors-open-1.png"
-}
-
-function returnImg5e(){
-    document.querySelector('.img5').src = "image.png/inkeddoors-closed-5.jpg"
-}
-
 function genderAppear1e(){
     data.push('Edition: 1e ')
     document.getElementById('editionsPage').style.display = 'none'
